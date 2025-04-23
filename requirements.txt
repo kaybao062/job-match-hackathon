@@ -1,153 +1,239 @@
-# to update this file
-# pip freeze > requirements.txt
+langchain-community
+langchain-core
+langchain-text-splitters
+langchain-ollama
+langchain-huggingface
+python-dotenv
+requests
+faiss-cpu
+uuid
 
 
-aiofiles==24.1.0
-aiohappyeyeballs==2.6.1
-aiohttp==3.11.16
-aiosignal==1.3.2
-alabaster==0.7.16
-annotated-types==0.7.0
-anyio==4.9.0
-appnope==0.1.4
-asttokens==3.0.0
-attrs==25.3.0
-babel==2.17.0
-backoff==2.2.1
-beautifulsoup4==4.13.3
-blurb==2.0.0
-certifi==2025.1.31
-cffi==1.17.1
-chardet==5.2.0
-charset-normalizer==3.4.1
-click==8.1.8
-comm==0.2.2
-cryptography==44.0.2
-dataclasses-json==0.6.7
-debugpy==1.8.13
-decorator==5.2.1
-docutils==0.21.2
-docx2txt==0.9
-emoji==2.14.1
-eval_type_backport==0.2.2
-executing==2.2.0
-faiss-cpu==1.10.0
-filelock==3.18.0
-filetype==1.2.0
-frozenlist==1.5.0
-fsspec==2025.3.2
-h11==0.14.0
-html5lib==1.1
-httpcore==1.0.7
-httpx==0.28.1
-httpx-sse==0.4.0
-huggingface-hub==0.30.2
-idna==3.10
-imagesize==1.4.1
-ipykernel==6.29.5
-ipython==9.1.0
-ipython_pygments_lexers==1.1.1
-jedi==0.19.2
-Jinja2==3.1.6
-joblib==1.4.2
-jsonpatch==1.33
-jsonpointer==3.0.0
-jupyter_client==8.6.3
-jupyter_core==5.7.2
-langchain==0.3.23
-langchain-community==0.3.21
-langchain-core==0.3.51
-langchain-huggingface==0.1.2
-langchain-ollama==0.3.1
-langchain-text-splitters==0.3.8
-langdetect==1.0.9
-langsmith==0.3.28
-lxml==5.3.2
-MarkupSafe==3.0.2
-marshmallow==3.26.1
-matplotlib-inline==0.1.7
-mpmath==1.3.0
-multidict==6.4.1
-mypy-extensions==1.0.0
-nest-asyncio==1.6.0
-networkx==3.4.2
-nltk==3.9.1
-numpy==2.2.4
-olefile==0.47
-ollama==0.4.7
-orjson==3.10.16
-outcome==1.3.0.post0
-packaging==24.2
-parso==0.8.4
-pexpect==4.9.0
-pillow==11.1.0
-platformdirs==4.3.7
-prompt_toolkit==3.0.50
-propcache==0.3.1
-psutil==7.0.0
-ptyprocess==0.7.0
-pure_eval==0.2.3
-pycparser==2.22
-pydantic==2.11.3
-pydantic-settings==2.8.1
-pydantic_core==2.33.1
-Pygments==2.19.1
-pypdf==5.4.0
-PySocks==1.7.1
-python-dateutil==2.9.0.post0
-python-docs-theme==2024.12
-python-docx==1.1.2
-python-dotenv==1.1.0
-python-iso639==2025.2.18
-python-magic==0.4.27
-python-oxmsg==0.0.2
-PyYAML==6.0.2
-pyzmq==26.4.0
-RapidFuzz==3.13.0
-regex==2024.11.6
-requests==2.32.3
-requests-toolbelt==1.0.0
-safetensors==0.5.3
-scikit-learn==1.6.1
-scipy==1.15.2
-selenium==4.31.0
-sentence-transformers==4.0.2
-setuptools==78.1.0
-six==1.17.0
-sniffio==1.3.1
-snowballstemmer==2.2.0
-sortedcontainers==2.4.0
-soupsieve==2.6
-Sphinx==2.4.4
-sphinxcontrib-applehelp==2.0.0
-sphinxcontrib-devhelp==2.0.0
-sphinxcontrib-htmlhelp==2.1.0
-sphinxcontrib-jsmath==1.0.1
-sphinxcontrib-qthelp==2.0.0
-sphinxcontrib-serializinghtml==2.0.0
-SQLAlchemy==2.0.40
-stack-data==0.6.3
-sympy==1.13.1
-tenacity==9.1.2
-threadpoolctl==3.6.0
-tokenizers==0.21.1
-torch==2.6.0
-tornado==6.4.2
-tqdm==4.67.1
-traitlets==5.14.3
-transformers==4.51.1
-trio==0.29.0
-trio-websocket==0.12.2
-typing-inspect==0.9.0
-typing-inspection==0.4.0
-typing_extensions==4.13.1
-unstructured==0.17.2
-unstructured-client==0.32.3
-urllib3==2.3.0
-wcwidth==0.2.13
-webencodings==0.5.1
-websocket-client==1.8.0
-wrapt==1.17.2
-wsproto==1.2.0
-yarl==1.19.0
-zstandard==0.23.0
+
+# absl-py
+# aiohttp
+# altair
+# # anaconda-client==1.12.0
+# anaconda-client
+# anaconda-navigator
+# annotated-types
+# appdirs
+# asgiref
+# astunparse
+# async-timeout
+# asyncpg
+# atomicwrites
+# attrs
+# azure-core
+# azure-identity
+# backoff
+# backports.weakref
+# bcrypt
+# beautifulsoup4
+# bertopic
+# blinker
+# blis
+# branca
+# brotlipy
+# build
+# cachetools
+# Cartopy
+# catalogue
+# charset-normalizer
+# chroma-hnswlib
+# chromadb
+# click-plugins
+# cligj
+# cloudpathlib
+# clyent
+# coloredlogs
+# conda-repo-cli
+# conda-verify
+# confection
+# constantly
+# cssselect
+# cymem
+# Cython
+# dataclasses-json
+# datashape
+# Deprecated
+# dirtyjson
+# distlib
+# distro
+# dnspython
+# docopt
+# editdistance
+# email_validator
+# en-core-web-lg @ https://github.com/explosion/spacy-models/releases/download/en_core_web_lg-3.7.1/en_core_web_lg-3.7.1-py3-none-any.whl#sha256=ab70aeb6172cde82508f7739f35ebc9918a3d07debeed637403c8f794ba3d3dc
+# en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.0/en_core_web_sm-3.7.0-py3-none-any.whl#sha256=6215d71a3212690e9aec49408a27e3fe6ad7cd6c715476e93d70dc784041e93e
+# et-xmlfile
+# fastapi
+# fastapi-cli
+# filelock
+# fiona
+# flatbuffers
+# folium
+# fonttools
+# fredapi
+# fsspec
+# gast
+# geopandas
+# gitdb
+# GitPython
+# google-auth
+# google-pasta
+# googleapis-common-protos
+# grpcio
+# h11
+# h2
+# h5py
+# hdbscan
+# hpack
+# htmltools
+# httpcore
+# httplib2
+# httptools
+# httpx
+# huggingface-hub
+# humanfriendly
+# hyperframe
+# importlib_resources
+# inflection
+# ipyleaflet
+# ipython
+# jsonpatch
+# jsonpointer
+# keras
+# kubernetes
+# langchain
+# langchain-community
+# langchain-core
+# langchain-experimental
+# langchain-openai
+# langchain-text-splitters
+# langcodes
+# langgraph
+# langgraph-checkpoint
+# langgraph-prebuilt
+# langgraph-sdk
+# langsmith
+# Levenshtein
+# libclang
+# llama-index
+# llama-index-agent-openai
+# llama-index-cli
+# llama-index-core
+# llama-index-embeddings-openai
+# llama-index-graph-stores-nebula
+# llama-index-indices-managed-llama-cloud
+# llama-index-legacy
+# llama-index-llms-azure-openai
+# llama-index-llms-openai
+# llama-index-multi-modal-llms-openai
+# llama-index-program-openai
+# llama-index-question-gen-openai
+# llama-index-readers-file
+# llama-index-readers-llama-parse
+# llama-index-vector-stores-chroma
+# llama-index-vector-stores-pinecone
+# llama-index-vector-stores-postgres
+# llama-parse
+# llamaindex-py-client
+# marshmallow
+# mistune
+# ml-dtypes
+# mmh3
+# monotonic
+# msal
+# msal-extensions
+# munkres
+# murmurhash
+# mypy-extensions
+# namex
+# navigator-updater
+# nbconvert
+# nebula3-python
+# nest-asyncio
+# numpy
+# oauthlib
+# ollama
+# onnxruntime
+# openai
+# openpyxl
+# opentelemetry-api
+# opentelemetry-exporter-otlp-proto-common
+# opentelemetry-exporter-otlp-proto-grpc
+# opentelemetry-instrumentation
+# opentelemetry-instrumentation-asgi
+# opentelemetry-instrumentation-fastapi
+# opentelemetry-proto
+# opentelemetry-sdk
+# opentelemetry-semantic-conventions
+# opentelemetry-util-http
+# opt-einsum
+# optree
+# orjson
+# ormsgpack
+# outcome
+# overrides
+# packaging
+# pandas-datareader
+# patsy
+# pdfminer
+# pdfminer.six
+# pdfplumber
+# pep8
+# pgvector
+# Pillow
+# pinecone-client
+# pipenv
+# pipreqs
+# platformdirs
+# ply
+# portalocker
+# posthog
+# preshed
+# protobuf
+# psycopg2-binary
+# pyarrow
+# pyasn1-modules
+# PyAudio
+# pycryptodome
+# pycurl
+# pydantic
+# pydantic_core
+# pydeck
+# PyDispatcher
+# pyls-spyder
+# Pympler
+# pynndescent
+# pypdf
+# pypdfium2
+# PyPika
+# pyproj
+# pyproject_hooks
+# PyQt5-sip
+# pyshp
+# python-dotenv
+# python-lsp-jsonrpc
+# python-multipart
+# pytz-deprecation-shim
+# PyYAML
+# queuelib
+# rank-bm25
+# rapidfuzz
+# requests-oauthlib
+# rich
+# rsa
+# safetensors
+# scipy
+# selenium
+
+# sentence-transformers
+# shapely
+# shellingham
+# shiny
+# shinywidgets
+# smmap
+# sniffio
+# sodapy

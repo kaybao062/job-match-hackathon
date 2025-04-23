@@ -1,3 +1,5 @@
 resume.docx
-panda-hack/
+hackathon/
+src/__pycache__/
+vectorstore/
 .env
