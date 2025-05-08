@@ -54,8 +54,28 @@ def get_job_listings():
         'app_id': app_id,
         'app_key': app_key,
         'results_per_page': 20,
-        'what': 'data scientist, remote',
+        'page': 1,
+        'what': 'data scientist', # job, company name, etc.
+        'where': 'London', # city, state, postal codes etc.
+        'distance': 10, # The distance in kilometres from the centre of the place described by the 'where' parameter. Defaults to 5km.
+        'max_days_old': 1, # in days
+        'sort_dir': 'up', # up or down,
+        'sort_by': 'default', # sort by date, salary, relevance, default, hybrid
+        'salary_min': 0, # minimum salary # what if hourly wage?
+        'salary_max': 100000, # maximum salary,
+        'salary_include_unknown': 1, # 1 if salary is predicted, otherwise '',
+        'full_time': 1, # If set to "1", only full time jobs will be returned
+        'part_time': 1, # If set to "1", only part time jobs will be returned
+        'contract': 1, # If set to "1", only contract jobs will be returned
+        'permanent': 1, # If set to "1", only permanent jobs will be returned
+        'company': 'Google', # company name
+        # some other keywords good to include but not necessary:
+        # 'what_and': 'data scientist, remote', # The keywords to search for, all keywords must be found.
+        # 'what_or': 'data scientist, remote', The keywords to search for, any keywords may be found. Multiple terms may be space separated
+        # 'what_exclude': 'internship', Keywords to exclude from the search. Multiple terms may be space separated.
+        # 'title_only': Keywords to find, but only in the title. Multiple terms may be space separated.
         'content-type': 'application/json'
+        
     }
 
     # Make the GET request

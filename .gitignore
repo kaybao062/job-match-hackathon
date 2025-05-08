@@ -2,4 +2,5 @@ resume.docx
 hackathon/
 src/__pycache__/
 vectorstore/
+src/tools.py
 .env
