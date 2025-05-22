@@ -1,0 +1,25 @@
+Here are the top 3 job matches for YiJin Bao based on the provided resume:
+
+### 1. **Data Scientist - Remote position**
+   - **Rank Score: 95/100**
+   - **Reasoning:**
+     - **Education:** YiJin Bao's Master of Public Policy (MPP) with a specialization in Data Analytics is highly relevant to the role of a Data Scientist.
+     - **Experience:** YiJin has extensive experience in data science, including ETL pipelines, NLP, machine learning, and data visualization, all of which are crucial for the role.
+     - **Skills:** YiJin's proficiency in Python, SQL, and various data visualization tools aligns perfectly with the job requirements.
+     - **Additional Strengths:** YiJin's experience with AI models and data-driven decision-making makes her a strong candidate for this role.
+
+### 2. **Associate Data Scientist - Remote position**
+   - **Rank Score: 85/100**
+   - **Reasoning:**
+     - **Education:** YiJin's educational background in data analytics and public policy is relevant to the role, especially given the focus on conflict data analysis.
+     - **Experience:** YiJin's experience with data collection, cleaning, and analysis is directly applicable to the job.
+     - **Skills:** YiJin's skills in data visualization and machine learning are valuable for this role.
+     - **Additional Strengths:** YiJin's experience with public policy analysis can add depth to the conflict data analysis required for this role.
+
+### 3. **Data Scientist - Gen AI - Remote**
+   - **Rank Score: 80/100**
+   - **Reasoning:**
+     - **Education:** YiJin's MPP with a focus on data analytics is relevant to the role, especially in the context of AI and machine learning.
+     - **Experience:** YiJin's experience with AI models and data-driven decision-making is directly applicable to this role.
+     - **Skills:** YiJin's proficiency in Python, SQL, and various data visualization tools aligns well with the job requirements.
+     - **Additional Strengths:** YiJin's experience with AI solutions and prompt engineering makes her a strong candidate for this role.

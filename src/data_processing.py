@@ -15,7 +15,7 @@ from langchain.schema import Document
 from langchain_community.document_loaders import Docx2txtLoader
 from dotenv import load_dotenv
 import os
-
+from typing import Annotated
 import requests
 
 
