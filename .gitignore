@@ -9,3 +9,4 @@ src/agent.ipynb
 
 vectorstore_documents.txt
 output.txt
+job_matches.csv

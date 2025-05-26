@@ -3,7 +3,7 @@
 import os
 import sys
 # os.getcwd()
-os.chdir("/Users/kay/Desktop/job-match-hackathon")
+# os.chdir("/Users/kay/Desktop/job-match-hackathon")
 # print("New directory:", os.getcwd())
 
 from dotenv import load_dotenv
