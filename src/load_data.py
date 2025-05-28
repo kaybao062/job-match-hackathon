@@ -9,9 +9,9 @@ def load_vector_store():
     return FAISS.load_local("vectorstore", embeddings, allow_dangerous_deserialization=True)
 
 # Load the FAISS vector store
-# vs = load_vector_store()
+vs = load_vector_store()
 
-# Print all documents
+# # Print all documents
 # with open("vectorstore_documents.txt", "w", encoding="utf-8") as f:
 #     for i, doc_id in enumerate(vs.index_to_docstore_id.values(), start=1):
 #         d = vs.docstore.search(doc_id)
