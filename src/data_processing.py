@@ -39,7 +39,7 @@ import requests
 # company
 
 # Define the endpoint and query parameters
-def get_job_listings(app_id, app_key, what = None, where = None, distance = 5, max_days_old = 7, sort_dir = 'up', sort_by = 'default', salary_min = 0, salary_max = 200000, salary_include_unknown = 1, full_time = None, part_time = None, contract = None, permanent = None, company = None):
+def get_job_listings(app_id, app_key, country, what = None, where = None, distance = 5, max_days_old = 7, sort_dir = 'up', sort_by = 'default', salary_min = 0, salary_max = 200000, salary_include_unknown = 1, full_time = None, part_time = None, contract = None, permanent = None, company = None):
     '''
     Get job listing with API
     '''
@@ -51,7 +51,8 @@ def get_job_listings(app_id, app_key, what = None, where = None, distance = 5, m
 
     for i in range(1, page + 1):
         # Define the endpoint and query parameters
-        url = f'http://api.adzuna.com/v1/api/jobs/gb/search/{i}'
+        url = f'http://api.adzuna.com/v1/api/jobs/{country}/search/{i}'
+        # url = f'http://api.adzuna.com/v1/api/jobs/search/{i}'
 
         # Define parameters: logic needed
         params = {
@@ -64,7 +65,7 @@ def get_job_listings(app_id, app_key, what = None, where = None, distance = 5, m
             'distance': distance, # The distance in kilometres from the centre of the place described by the 'where' parameter. Defaults to 5km.
             'max_days_old': max_days_old, # default to 7 days if not specified
             # 'sort_by': sort_by, # sort by date, salary, relevance, default, hybrid
-            # 'sort_dir': sort_dir # up or down,
+            # 'sort_dir': sort_dir, # up or down,
             'salary_min': salary_min, # minimum salary # what if hourly wage?
             'salary_max': salary_max, # maximum salary,
             'salary_include_unknown': salary_include_unknown, # 1 if salary is predicted, otherwise '',
@@ -131,6 +132,7 @@ def get_job_listings(app_id, app_key, what = None, where = None, distance = 5, m
 #### Define job API call pipeline
 
 def add_jobs_to_vectordb(
+    country, 
     what=None,
     where=None,
     distance=5,
@@ -171,6 +173,7 @@ def add_jobs_to_vectordb(
     documents = get_job_listings(
         app_id = app_id,
         app_key = app_key, 
+        country = country, 
         what=what,
         where=where,
         distance=distance,
@@ -198,6 +201,9 @@ def add_jobs_to_vectordb(
     # Save locally
     vector_store.save_local("vectorstore/")
 
+# example usage
+add_jobs_to_vectordb(what = 'Software Engineer', country='gb', where='london')
+
 
 # add_jobs_to_vectordb(
 #     what=None,
@@ -220,5 +226,5 @@ def add_jobs_to_vectordb(
 
 # app_id = os.getenv("app_id")
 # app_key = os.getenv("app_key")
-add_jobs_to_vectordb(what = 'Software Engineer', where='london')
+
 # get_job_listings(app_id=app_id, app_key=app_key, what = 'Software Engineer', where='london')

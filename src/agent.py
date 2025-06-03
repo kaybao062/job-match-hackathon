@@ -34,7 +34,18 @@ os.environ['TOKENIZERS_PARALLELISM'] = 'true'
 
 load_dotenv() # load env
 
+
+# # # Load resume
+# from langchain_community.document_loaders import Docx2txtLoader
+# loader = Docx2txtLoader("resume.docx")
+
+# data = loader.load()
+
+# # Convert to a single string
+# resume = "\n".join([doc.page_content for doc in data])
+
 def run_agent(resume: str):
+# def run_agent():
 
     # Initiate AI
 
@@ -59,22 +70,14 @@ def run_agent(resume: str):
 
 
     # Wrap in tools
-    query_engine_tool = StructuredTool.from_function(
+    QueryEngine = StructuredTool.from_function(
         func=QueryEngine,
         name="QueryEngine",
         description="Use this tool to retrieve relevant job listings when a resume is provided to find top 3 matching jobs from the job listings database."
     )
-    tools = [query_engine_tool]
+    tools = [QueryEngine]
 
 
-    # # # Load resume
-    # from langchain_community.document_loaders import Docx2txtLoader
-    # loader = Docx2txtLoader("resume.docx")
-
-    # data = loader.load()
-
-    # # Convert to a single string
-    # doc_text = "\n".join([doc.page_content for doc in data])
 
 # doc_text 
 # doc_text = ''
@@ -83,17 +86,21 @@ def run_agent(resume: str):
     template = """
 You are a helpful assistant for matching resumes to job listings. 
 
-- You will be given a resume. Please review it and use the `QueryEngine` tool to retrieve relevant job listings from the vector database.
+- You will be given a resume. Please review it and use the tool provided to retrieve relevant job listings from the vector database.
 - Based on the education, experience, and skills in the resume, select the **top 3 matching jobs**.
+- Found information such as url from metadata. 
 - Assign each job a **rank score** out of 100.
 - Provide a clear explanation for why each job was selected, broken down into education, skills, and experience.
 - If no resume is provided, respond with: "No resume submitted. Unable to match jobs."
+- If no matched job, respond with: 'No matches are found'. 
 
 Return only the top 3 results in **strict JSON array format** like this (do not include any explanation or text before or after):
 
 [
   {{
     "Job title": "<Job Title - Company>",
+    "Company": "<Company name>",
+    "URL": "<job url>",
     "Score": <integer>,
     "Reason of ranking - Education": "<text>",
     "Reason of ranking - Skills": "<text>",
@@ -122,9 +129,10 @@ Return only the top 3 results in **strict JSON array format** like this (do not 
     # print(response)
 
     final_output = response.get("output")
+    # print("Final output:", final_output)
 
     return final_output
-    # print("Final output:", final_output)
+    
 
 
     # if response:
@@ -134,7 +142,7 @@ Return only the top 3 results in **strict JSON array format** like this (do not 
     #     print(response)
 
 
-# output = run_agent()
+# output = run_agent(resume)
 
 # # Save final_output to a text file
 # with open("output.txt", "w", encoding="utf-8") as f:

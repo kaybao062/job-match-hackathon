@@ -21,7 +21,6 @@ data = loader.load()
 # Convert to a single string
 resume = "\n".join([doc.page_content for doc in data])
 
-resume
 
 
 from agent import run_agent
@@ -55,11 +54,10 @@ def agent_output_process(resume):
     '''
 
 
-
     # Run agent
     # from agent import run_agent
     output = run_agent(resume)
-    # output = run_agent(doc_text)
+
 
     # Post-process or print
     print(output)  
@@ -85,7 +83,8 @@ def agent_output_process(resume):
         
     # print("✅ CSV file 'job_matches.csv' created successfully.")
 
-
+# Example usage
 df = agent_output_process(resume)
+print(df)
 
-# df.to_csv('output_test.csv')
+
