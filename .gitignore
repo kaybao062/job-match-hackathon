@@ -1,0 +1,12 @@
+resume.docx
+hackathon/
+src/__pycache__/
+vectorstore/
+src/tools.py
+src/query_engine.py
+src/agent.ipynb
+.env
+
+vectorstore_documents.txt
+output.txt
+job_matches.csv
