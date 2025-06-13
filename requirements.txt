@@ -1,239 +1,121 @@
-langchain-community
-langchain-core
-langchain-text-splitters
-langchain-ollama
-langchain-huggingface
-python-dotenv
-requests
-faiss-cpu
-uuid
-
-
-
-# absl-py
-# aiohttp
-# altair
-# # anaconda-client==1.12.0
-# anaconda-client
-# anaconda-navigator
-# annotated-types
-# appdirs
-# asgiref
-# astunparse
-# async-timeout
-# asyncpg
-# atomicwrites
-# attrs
-# azure-core
-# azure-identity
-# backoff
-# backports.weakref
-# bcrypt
-# beautifulsoup4
-# bertopic
-# blinker
-# blis
-# branca
-# brotlipy
-# build
-# cachetools
-# Cartopy
-# catalogue
-# charset-normalizer
-# chroma-hnswlib
-# chromadb
-# click-plugins
-# cligj
-# cloudpathlib
-# clyent
-# coloredlogs
-# conda-repo-cli
-# conda-verify
-# confection
-# constantly
-# cssselect
-# cymem
-# Cython
-# dataclasses-json
-# datashape
-# Deprecated
-# dirtyjson
-# distlib
-# distro
-# dnspython
-# docopt
-# editdistance
-# email_validator
-# en-core-web-lg @ https://github.com/explosion/spacy-models/releases/download/en_core_web_lg-3.7.1/en_core_web_lg-3.7.1-py3-none-any.whl#sha256=ab70aeb6172cde82508f7739f35ebc9918a3d07debeed637403c8f794ba3d3dc
-# en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.0/en_core_web_sm-3.7.0-py3-none-any.whl#sha256=6215d71a3212690e9aec49408a27e3fe6ad7cd6c715476e93d70dc784041e93e
-# et-xmlfile
-# fastapi
-# fastapi-cli
-# filelock
-# fiona
-# flatbuffers
-# folium
-# fonttools
-# fredapi
-# fsspec
-# gast
-# geopandas
-# gitdb
-# GitPython
-# google-auth
-# google-pasta
-# googleapis-common-protos
-# grpcio
-# h11
-# h2
-# h5py
-# hdbscan
-# hpack
-# htmltools
-# httpcore
-# httplib2
-# httptools
-# httpx
-# huggingface-hub
-# humanfriendly
-# hyperframe
-# importlib_resources
-# inflection
-# ipyleaflet
-# ipython
-# jsonpatch
-# jsonpointer
-# keras
-# kubernetes
-# langchain
-# langchain-community
-# langchain-core
-# langchain-experimental
-# langchain-openai
-# langchain-text-splitters
-# langcodes
-# langgraph
-# langgraph-checkpoint
-# langgraph-prebuilt
-# langgraph-sdk
-# langsmith
-# Levenshtein
-# libclang
-# llama-index
-# llama-index-agent-openai
-# llama-index-cli
-# llama-index-core
-# llama-index-embeddings-openai
-# llama-index-graph-stores-nebula
-# llama-index-indices-managed-llama-cloud
-# llama-index-legacy
-# llama-index-llms-azure-openai
-# llama-index-llms-openai
-# llama-index-multi-modal-llms-openai
-# llama-index-program-openai
-# llama-index-question-gen-openai
-# llama-index-readers-file
-# llama-index-readers-llama-parse
-# llama-index-vector-stores-chroma
-# llama-index-vector-stores-pinecone
-# llama-index-vector-stores-postgres
-# llama-parse
-# llamaindex-py-client
-# marshmallow
-# mistune
-# ml-dtypes
-# mmh3
-# monotonic
-# msal
-# msal-extensions
-# munkres
-# murmurhash
-# mypy-extensions
-# namex
-# navigator-updater
-# nbconvert
-# nebula3-python
-# nest-asyncio
-# numpy
-# oauthlib
-# ollama
-# onnxruntime
-# openai
-# openpyxl
-# opentelemetry-api
-# opentelemetry-exporter-otlp-proto-common
-# opentelemetry-exporter-otlp-proto-grpc
-# opentelemetry-instrumentation
-# opentelemetry-instrumentation-asgi
-# opentelemetry-instrumentation-fastapi
-# opentelemetry-proto
-# opentelemetry-sdk
-# opentelemetry-semantic-conventions
-# opentelemetry-util-http
-# opt-einsum
-# optree
-# orjson
-# ormsgpack
-# outcome
-# overrides
-# packaging
-# pandas-datareader
-# patsy
-# pdfminer
-# pdfminer.six
-# pdfplumber
-# pep8
-# pgvector
-# Pillow
-# pinecone-client
-# pipenv
-# pipreqs
-# platformdirs
-# ply
-# portalocker
-# posthog
-# preshed
-# protobuf
-# psycopg2-binary
-# pyarrow
-# pyasn1-modules
-# PyAudio
-# pycryptodome
-# pycurl
-# pydantic
-# pydantic_core
-# pydeck
-# PyDispatcher
-# pyls-spyder
-# Pympler
-# pynndescent
-# pypdf
-# pypdfium2
-# PyPika
-# pyproj
-# pyproject_hooks
-# PyQt5-sip
-# pyshp
-# python-dotenv
-# python-lsp-jsonrpc
-# python-multipart
-# pytz-deprecation-shim
-# PyYAML
-# queuelib
-# rank-bm25
-# rapidfuzz
-# requests-oauthlib
-# rich
-# rsa
-# safetensors
-# scipy
-# selenium
-
-# sentence-transformers
-# shapely
-# shellingham
-# shiny
-# shinywidgets
-# smmap
-# sniffio
-# sodapy
+aiohappyeyeballs==2.6.1
+aiohttp==3.11.17
+aiosignal==1.3.2
+annotated-types==0.7.0
+anyio==4.9.0
+appnope==0.1.4
+asttokens==3.0.0
+attrs==25.3.0
+beautifulsoup4==4.13.4
+bs4==0.0.2
+certifi==2025.1.31
+charset-normalizer==3.4.1
+comm==0.2.2
+dataclasses-json==0.6.7
+debugpy==1.8.14
+decorator==5.2.1
+distro==1.9.0
+docx2txt==0.9
+executing==2.2.0
+faiss-cpu==1.10.0
+filelock==3.18.0
+frozenlist==1.6.0
+fsspec==2025.3.2
+h11==0.14.0
+httpcore==1.0.8
+httpx==0.28.1
+httpx-sse==0.4.0
+huggingface-hub==0.30.2
+idna==3.10
+ipykernel==6.29.5
+ipython==9.1.0
+ipython_pygments_lexers==1.1.1
+jedi==0.19.2
+Jinja2==3.1.6
+jiter==0.9.0
+joblib==1.4.2
+jsonpatch==1.33
+jsonpointer==3.0.0
+jupyter_client==8.6.3
+jupyter_core==5.7.2
+langchain==0.3.25
+langchain-community==0.3.23
+langchain-core==0.3.58
+langchain-deepseek==0.1.3
+langchain-huggingface==0.1.2
+langchain-mistralai==0.2.10
+langchain-ollama==0.3.2
+langchain-openai==0.3.16
+langchain-text-splitters==0.3.8
+langgraph==0.4.1
+langgraph-checkpoint==2.0.24
+langgraph-prebuilt==0.1.8
+langgraph-sdk==0.1.63
+langsmith==0.3.32
+MarkupSafe==3.0.2
+marshmallow==3.26.1
+matplotlib-inline==0.1.7
+mpmath==1.3.0
+multidict==6.4.3
+mypy-extensions==1.0.0
+nest-asyncio==1.6.0
+networkx==3.4.2
+numpy==2.2.5
+ollama==0.4.8
+openai==1.77.0
+orjson==3.10.16
+ormsgpack==1.9.1
+packaging==24.2
+pandas==2.2.3
+parso==0.8.4
+pexpect==4.9.0
+pillow==11.2.1
+platformdirs==4.3.7
+prompt_toolkit==3.0.51
+propcache==0.3.1
+psutil==7.0.0
+ptyprocess==0.7.0
+pure_eval==0.2.3
+pydantic==2.11.3
+pydantic-settings==2.9.1
+pydantic_core==2.33.1
+Pygments==2.19.1
+python-dateutil==2.9.0.post0
+python-dotenv==1.1.0
+pytz==2025.2
+PyYAML==6.0.2
+pyzmq==26.4.0
+regex==2024.11.6
+requests==2.32.3
+requests-toolbelt==1.0.0
+safetensors==0.5.3
+scikit-learn==1.6.1
+scipy==1.15.2
+sentence-transformers==4.1.0
+setuptools==79.0.0
+six==1.17.0
+sniffio==1.3.1
+soupsieve==2.7
+SQLAlchemy==2.0.40
+stack-data==0.6.3
+sympy==1.13.1
+tavily-python==0.7.2
+tenacity==9.1.2
+threadpoolctl==3.6.0
+tiktoken==0.9.0
+tokenizers==0.21.1
+torch==2.6.0
+tornado==6.4.2
+tqdm==4.67.1
+traitlets==5.14.3
+transformers==4.51.3
+typing-inspect==0.9.0
+typing-inspection==0.4.0
+typing_extensions==4.13.2
+tzdata==2025.2
+urllib3==2.4.0
+uuid==1.30
+wcwidth==0.2.13
+xxhash==3.5.0
+yarl==1.20.0
+zstandard==0.23.0

@@ -6,7 +6,7 @@ src/tools.py
 src/query_engine.py
 src/agent.ipynb
 .env
-
+requirements_old.txt
 vectorstore_documents.txt
 output.txt
 job_matches.csv
