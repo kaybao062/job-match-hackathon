@@ -29,10 +29,9 @@ def _set_env(var: str):
         os.environ[var] = getpass.getpass(f"{var}: ")
 
 # Load mistrial api
+load_dotenv() # load env
 _set_env("MISTRAL_API_KEY")
 os.environ['TOKENIZERS_PARALLELISM'] = 'true'
-
-load_dotenv() # load env
 
 
 # # # Load resume

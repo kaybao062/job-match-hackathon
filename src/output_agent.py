@@ -1,4 +1,5 @@
 ### This script takes resume as argument, runs the agent, output response and store as csv
+# source venv/Scripts/activate
 
 
 import os
@@ -7,8 +8,8 @@ import json
 import pandas as pd
 # %pip install -qU langchain-text-splitters
 
-os.chdir("/Users/kay/Desktop/job-match-hackathon")
-print("New directory:", os.getcwd())
+# os.chdir("/OneDrive/Desktop/Panda hackathon 2025")
+# print("New directory:", os.getcwd())
 
 
 # Load resume
