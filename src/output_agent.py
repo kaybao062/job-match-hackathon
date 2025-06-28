@@ -8,23 +8,30 @@ import json
 import pandas as pd
 # %pip install -qU langchain-text-splitters
 
+#new imports for new method with python doc x
+from doxc import Document
+from io import BytesIO
+from agent import run_agent
+
 # os.chdir("/OneDrive/Desktop/Panda hackathon 2025")
 # print("New directory:", os.getcwd())
 
-
+#Old method with docx2txtloader
+# = = = = = = =  = = = =  = = =  = = = = = = = = = = = = = = = = = = = 
 # Load resume
 
-from langchain_community.document_loaders import Docx2txtLoader
-loader = Docx2txtLoader("resume.docx")
+# from langchain_community.document_loaders import Docx2txtLoader
+# loader = Docx2txtLoader("resume.docx")
 
-data = loader.load()
+# data = loader.load()
 
-# Convert to a single string
-resume = "\n".join([doc.page_content for doc in data])
+# # Convert to a single string
+# resume = "\n".join([doc.page_content for doc in data])
+# = = = = = = =  = = = =  = = =  = = = = = = = = = = = = = = = = = = = 
 
-
-
-from agent import run_agent
+def extract_text_from_docx_bytes(file_bytes: bytes) -> str:
+    doc = Document(BytesIO(file_bytes))
+    return "\n".join([p.text for p in doc.paragraphs if p.text.strip()])
 
 def parse_json(output):
     '''
@@ -47,6 +54,23 @@ def parse_json(output):
             print("Fallback decode failed due to incorrect json format:", fallback_e)
             return None
         
+def agent_output_process_v2(resume_text: str):
+    output = run_agent(resume_text)
+    if not output:
+        print("No output from agent.")
+        return None
+    output_dict = parse_json(output)
+    
+    if not output_dict:
+        print("Failed to parse JSON.")
+        return None
+    
+    df = pd.DataFrame(output_dict)
+    return df
+
+def agent_output_process_from_bytes(file_bytes: bytes):
+    resume_text = extract_text_from_docx_bytes(file_bytes)
+    return agent_output_process_v2(resume_text)
 
 def agent_output_process(resume):
 # def agent_output_process():
